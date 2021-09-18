@@ -14,8 +14,8 @@ public class Matrix_program {
 		int n = sc.nextInt();
 		int[][] mat = new int[m][n];
 
-		for (int i = 0; i < m; i++) {
-			for (int j = 0; j < n; j++) {
+		for (int i = 0; i < mat.length; i++) {
+			for (int j = 0; j < mat[i].length; j++) {
 				mat[i][j] = sc.nextInt();
 			}
 		}
@@ -23,8 +23,8 @@ public class Matrix_program {
 		System.out.println();
 		int X = sc.nextInt();
 
-		for (int i = 0; i < m; i++) {
-			for (int j = 0; j < n; j++) {
+		for (int i = 0; i < mat.length; i++) {
+			for (int j = 0; j < mat[i].length; j++) {
 
 				if (mat[i][j] == X) {
 					System.out.println("Position: " + i + j);
